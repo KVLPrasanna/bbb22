@@ -569,55 +569,38 @@ p {
   animation: flicker 1s ease-in-out alternate infinite;
 }
 
+/* OPPO F19 / tall Android phones */
+@media (max-width: 400px) and (min-height: 750px) {
 
-@media (max-width: 900px) {
-
-  .main-layout {
-    flex-direction: column;
-  }
-
-  .body1,
-  .right-wrapper {
-    width: 100%;
-  }
-
-  .c {
-    max-width: 92%;
-  }
-
-  /* === BACKGROUND IMAGES SIDE BY SIDE === */
   body {
     background-size:
-      28%,
-      28%;
+      30%,
+      30%;
 
     background-position:
-      left 15% center,
-      right 15% center;
+      left 12% center,
+      right 12% center;
   }
 
-  /* === TEXT EXACTLY BETWEEN IMAGES === */
   .bg-between-text {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
     white-space: nowrap;
     opacity: 0.95;
-    z-index: 5;
   }
 
-  /* === CAKE BELOW IMAGES + TEXT === */
   .cake {
-    top: 65%;
+    top: 68%;
     left: 50%;
     transform: translateX(-50%);
   }
-
 }
+
 
 
 
