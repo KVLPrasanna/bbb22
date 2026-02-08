@@ -1,7 +1,7 @@
 body {
   background-color: rgb(44, 87, 110);
 
-  background-image: 
+ /* background-image: 
     url(kiss1.webp),
     url(love2.webp);
 
@@ -16,12 +16,21 @@ body {
   background-position: 
     center 80%,
     center 20%;
+    */
 }
+
+
+
+
+
+
+
 
 .main-layout {
   display: flex;
   min-height: 100vh;
 }
+/*
 
 .bg-between-text {
   position: fixed;
@@ -41,6 +50,59 @@ body {
   pointer-events: none;
   z-index: 5;
 }
+*/
+
+
+/* shared */
+.bg-row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;   /* 👈 STACKED */
+  align-items: center;
+  gap: 18px;
+
+  z-index: 5;
+}
+
+.bg-row img {
+  width: 180px;
+  height: auto;
+}
+
+.bg-between-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff7f1;
+  letter-spacing: 1px;
+  white-space: nowrap;
+
+  text-shadow:
+    0 2px 6px rgba(0,0,0,0.6),
+    0 0 12px rgba(255,182,193,0.8);
+}
+
+
+@media (max-width: 900px) {
+  .bg-row {
+    flex-direction: row;     /* 👈 SIDE BY SIDE */
+    gap: 12px;
+    top: 42%;
+  }
+
+  .bg-row img {
+    width: 64px;
+  }
+
+  .bg-between-text {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+}
+
 
 
 
@@ -280,10 +342,12 @@ p {
   position: absolute;
   width: 250px;
   height: 200px;
-  top: 50%;
-  left: 50%;
   margin-top: -70px;
   margin-left: -125px;
+top: 50%;
+  left: 50%;
+
+  
 }
 
 .plate {
@@ -568,42 +632,6 @@ p {
   transform-origin: 50% 90%;
   animation: flicker 1s ease-in-out alternate infinite;
 }
-
-/* OPPO F19 / tall Android phones */
-@media (max-width: 400px) and (min-height: 750px) {
-
-  body {
-    background-size:
-      30%,
-      30%;
-
-    background-position:
-      left 12% center,
-      right 12% center;
-  }
-
-  .bg-between-text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    white-space: nowrap;
-    opacity: 0.95;
-  }
-
-  .cake {
-    top: 68%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-
-
-
 
 
 
