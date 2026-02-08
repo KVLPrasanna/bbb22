@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Candle Blow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+  />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: #cfc2db;
+      font-family: sans-serif;
+    }
+
+    /* Hamburger Button */
+    .hamburger {
+      position: fixed;
+      top: 20px;
+      right: 16px;
+      width: 32px;
+      height: 24px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 1100;
+    }
+    .hamburger span {
+      height: 4px;
+      width: 100%;
+      background: #272761;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: -260px;
+      width: 260px;
+      height: 100%;
+      background: #fff7f1;
+      box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+      padding: 20px;
+      transition: right 0.3s ease;
+      z-index: 1000;
+    }
+    .sidebar.open {
+      right: 0;
+    }
+    .sidebar h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #383878;
+    }
+    .sidebar label {
+      display: block;
+      margin: 12px 0 4px;
+      font-size: 0.9rem;
+      color: #272761;
+    }
+    .sidebar select {
+      width: 100%;
+      padding: 6px;
+      border-radius: 6px;
+      border: 1px solid #272761;
+      background: #fff;
+      color: #383878;
+    }
+
+    .ui-controls {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      display: flex;
+      gap: 8px;
+      z-index: 900;
+    }
+    .ui-controls button {
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid #272761;
+      background: #fff7f1;
+      color: #383878;
+      cursor: pointer;
+    }
+    .ui-controls button:hover {
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <!-- ✅ Hamburger -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- ✅ Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <h2>Customize Cake</h2>
+
+    <label for="flavorSelect">Cake Flavor:</label>
+    <select id="flavorSelect">
+      <option value="chocolate">Chocolate</option>
+      <option value="vanilla">Vanilla</option>
+    </select>
+
+    <label for="candleColorSelect">Candle Color:</label>
+    <select id="candleColorSelect">
+      <option value="#ff0000">Red</option>
+      <option value="#ffa500">Orange</option>
+      <option value="#f0e930">Yellow</option>
+      <option value="#32a852">Green</option>
+      <option value="#2451f2">Blue</option>
+      <option value="#7426bd">Purple</option>
+        </select>
+        <button id="resetLinkBtn" class="sidebar-button">Reset Candles</button>
+      </div>
+
+      <div class="top-controls">
+        <button id="shareBtn">share cake</button>
+  </div>
+
+  <div class="candle-count-display">
+    candles on cake: <span id="candleCount">0</span>
+  </div>
+
+  <div id="customMessageDisplay"></div>
+
+  <div class="message-container">
+    <input type="text" id="customMessageInput" placeholder="Enter your message..." />
+    <button id="setMessageBtn">Set Message</button>
+  </div>
+
+  <div id="wps1">
+    <img src="image.png">
+  </div>
+
+  <div class="cake">
+    <div class="plate"></div>
+    <div class="layer layer-bottom"></div>
+    <div class="layer layer-middle"></div>
+    <div class="layer layer-top"></div>
+    <div class="icing"></div>
+    <div class="drip drip1"></div>
+    <div class="drip drip2"></div>
+    <div class="drip drip3"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Sidebar toggle
+    const hamburger = document.getElementById("hamburger");
+    const sidebar = document.getElementById("sidebar");
+
+    hamburger.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
