@@ -14,11 +14,11 @@
     body {
       margin: 0;
       min-height: 100vh;
-      background-color: #cfc2db;
+     
       font-family: sans-serif;
     }
 
-    /* Hamburger Button */
+   
     .hamburger {
       position: fixed;
       top: 20px;
@@ -34,23 +34,24 @@
     .hamburger span {
       height: 4px;
       width: 100%;
-      background: #272761;
+      background:  rgb(148, 208, 226);
       border-radius: 2px;
       transition: 0.3s;
     }
 
-    /* Sidebar */
+    
     .sidebar {
       position: fixed;
       top: 0;
       right: -260px;
       width: 260px;
       height: 100%;
-      background: #fff7f1;
+      background:rgb(113, 158, 172);
       box-shadow: -2px 0 8px rgba(0,0,0,0.2);
       padding: 20px;
       transition: right 0.3s ease;
       z-index: 1000;
+      border: 2px solid #383878;
     }
     .sidebar.open {
       right: 0;
@@ -94,17 +95,22 @@
     .ui-controls button:hover {
       background: #fff;
     }
+
+  
+
+
+
   </style>
 </head>
 <body>
-  <!-- ✅ Hamburger -->
+  
   <div class="hamburger" id="hamburger">
     <span></span>
     <span></span>
     <span></span>
   </div>
 
-  <!-- ✅ Sidebar -->
+ 
   <div class="sidebar" id="sidebar">
     <h2>Customize Cake</h2>
 
@@ -133,6 +139,35 @@
   <div class="candle-count-display">
     candles on cake: <span id="candleCount">0</span>
   </div>
+  <div class="main-layout">
+
+   <div class="body1">
+    <div class="c">
+        <h1>🎉Happy Birthday Handsome!🎉</h1> 
+        <p>[Busy Baby Boy 😜]</p>
+        <p class="a">🥳May this year be your best one yet!🎂🎈
+            Nenu neetho unta kabatti it will definitely be best year 😁
+           
+            Maniddaram eppudu <B>KALISE UNDALI</B>! Godava padina kuda,
+            daanni penchakunda thagginchadaniki chudali iddaram 
+            godavapadina roje compromise aipovali.</p>
+    <p class="b">I promise U that I will be forever with U!😊 </p>
+         <h2> <b> MISS YOU SO MUCH</b>❤️</h2>
+
+       <!--
+
+        <button class="btn" onclick="alert('LOVE YOU💖!')">Click Here</button>
+
+        -->
+    </div>
+    </div>
+
+
+
+  
+ <div class="right-wrapper">
+
+  <!--
 
   <div id="customMessageDisplay"></div>
 
@@ -140,9 +175,10 @@
     <input type="text" id="customMessageInput" placeholder="Enter your message..." />
     <button id="setMessageBtn">Set Message</button>
   </div>
+-->
 
   <div id="wps1">
-    <img src="image.png">
+    <img src="image4.png">
   </div>
 
   <div class="cake">
@@ -156,9 +192,13 @@
     <div class="drip drip3"></div>
   </div>
 
+ </div>
+
+ </div>
+
   <script src="script.js"></script>
   <script>
-    // Sidebar toggle
+   
     const hamburger = document.getElementById("hamburger");
     const sidebar = document.getElementById("sidebar");
 
