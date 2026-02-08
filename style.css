@@ -1,16 +1,120 @@
 body {
-  background-color: #fff7f1;
+  background-color: rgb(44, 87, 110);
+
+  background-image: 
+    url(kiss1.webp),
+    url(love2.webp);
+
+  background-repeat: 
+    no-repeat,
+    no-repeat;
+
+  background-size: 
+    13%,
+    17%;
+
+  background-position: 
+    center 80%,
+    center 30%;
 }
 
+
+
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+
+
+ .body1 {
+  width: 40%;
+  /* background-color: rgb(44, 87, 110); */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+           
+        
+        
+      .c {
+  background-color: rgb(148, 208, 226);
+  padding: 50px;
+  border-radius: 16px;
+  border: 2px solid rgb(159, 229, 250);
+  /* box-shadow: 
+    0 12px 30px rgba(248, 252, 252, 0.35);*/
+  width: 120%;
+  max-width: 500px;
+
+  box-sizing: border-box;
+}
+
+
+
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+        
+        h1 {
+            color: rgb(251, 94, 94);      
+        }
+        p {
+            color: rgb(55, 55, 56);
+        }
+
+        .a {
+            color: darkgreen;
+        }
+        .b {
+            font-size: 1.6em;
+            color: rgb(251, 95, 95);
+            margin-top: 25px;
+            font-weight: bold;
+        }
+/*
+        .btn {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+
+        }
+            */
+
+.right-wrapper {
+  position: relative;
+  width: 60%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: auto;   
+}
+
+/*
 .message-container {
   position: absolute;
-  top: 90vh; /* Near bottom of the viewport */
-  left: 0;
+  top: 90vh; 
+  left: 0px;
   width: 100%;
   text-align: center;
   pointer-events: none;
   transform: translateY(-50%);
 }
+  */
 
 #wps1 {
   position: relative; 
@@ -18,7 +122,7 @@ body {
 
 #wps1 img {
   position: absolute;
-  top: 130px;
+  bottom: -270px;
   left: 50%;                
   transform: translateX(-24%); 
 
@@ -26,6 +130,7 @@ body {
   max-width: 500px;
   height: 500px;
 }
+/*
 
 #customMessageInput {
   padding: 8px 12px;
@@ -41,7 +146,7 @@ body {
 
 #setMessageBtn {
   padding: 8px 16px;
-  margin-left: 8px;
+  margin-left: 30px;
   font-size: 16px;
   border-radius: 8px;
   background-color: #fff7f1;
@@ -57,7 +162,7 @@ body {
 
 #customMessageDisplay {
   position: absolute;
-  top: 13vh; /* Message stays near the top-middle */
+  top: 13vh; 
   width: 100%;
   text-align: center;
   font-size: 30px;
@@ -65,14 +170,15 @@ body {
   color: #383878;
   pointer-events: none;
 }
+  */
 
 
 #flavorSelect {
   
   appearance: none;
-  background-color: #fff7f1;  /* Match your UI (e.g., soft pink/lavender) */
-  color: #4b2354;              /* Deep purple text (adjust as needed) */
-  border: 2px solid #4b2354;   /* Border to match buttons/icing */
+  background-color: #fff7f1;  
+  color: #4b2354;             
+  border: 2px solid #4b2354;   
   border-radius: 8px;
   padding: 6px 12px;
   font-size: 16px;
@@ -83,14 +189,14 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Optional hover/focus effects */
+
 #flavorSelect:hover,
 #flavorSelect:focus {
   background-color: #f1d8ff;
   border-color: #ba7cf4;
 }
 
-/* Remove arrow and add custom one (optional for advanced styling) */
+
 #flavorSelect {
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234b2354' stroke-width='2' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -101,7 +207,7 @@ body {
 
 #candleColorSelect {
   appearance: none;
-  background-color: #fff7f1;   /* same as flavor select */
+  background-color: #fff7f1;   
   color: #4b2354;
   border: 2px solid #4b2354;
   border-radius: 8px;
@@ -113,7 +219,7 @@ body {
   outline: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-  /* Add the custom arrow */
+ 
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234b2354' stroke-width='2' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 10px center;
@@ -121,7 +227,7 @@ body {
   padding-right: 30px;
 }
 
-/* Optional hover/focus to match flavor select */
+
 #candleColorSelect:hover,
 #candleColorSelect:focus {
   background-color: #f1d8ff;
@@ -133,15 +239,15 @@ body {
   top: 16px;
   left: 16px;
   font-family: 'Arial', sans-serif;
-  font-size: clamp(14px, 4vw, 18px); /* Responsive font size */
+  font-size: clamp(14px, 4vw, 18px);
   color: #383878;
   background-color: #fff7f1;
   padding: 6px 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 2px solid #272761;
-  max-width: 50vw;              /* Prevents it from overflowing */
-  white-space: nowrap;          /* Keeps it on one line */
+  max-width: 50vw;           
+  white-space: nowrap;         
   overflow: hidden;
   text-overflow: ellipsis;
   z-index: 1000;
@@ -226,7 +332,7 @@ body {
 .icing {
   top: 2px;
   left: 5px;
-  background-color: #3b2a14; /* chocolate frosting base */
+  background-color: #3b2a14; 
   width: 240px;
   height: 90px;
   border-radius: 50%;
@@ -240,7 +346,7 @@ body {
   right: 5px;
   bottom: 6px;
   left: 5px;
-  background-color: #4b3610; /* darker chocolate */
+  background-color: #4b3610;
   box-shadow:
     0 0 4px #4d3a11,
     0 0 4px #4d3a11,
@@ -249,22 +355,22 @@ body {
   z-index: 1;
 }
 
-/* When vanilla cake is selected, switch to chocolate frosting */
+
 .cake.vanilla .icing {
-  background-color: #3b2a14; /* chocolate frosting */
+  background-color: #3b2a14; 
 }
 
 .cake.vanilla .icing::before {
-  background-color: #4b3610; /* darker chocolate */
+  background-color: #4b3610; 
   box-shadow:
     0 0 4px #4d3a11,
     0 0 4px #4d3a11,
     0 0 4px #4d3a11;
 }
 
-/* When chocolate cake is selected (no vanilla class), use vanilla frosting */
+
 .cake:not(.vanilla) .icing {
-  background-color: #f0e4d0; /* vanilla frosting */
+  background-color: #f0e4d0; 
 }
 
 .cake:not(.vanilla) .icing::before {
@@ -312,7 +418,7 @@ body {
     0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Optional enhancement for a glossier look */
+
 .cake.vanilla .drip::before {
   content: "";
   position: absolute;
@@ -326,7 +432,7 @@ body {
   pointer-events: none;
 }
 
-/* Top controls container */
+
 .top-controls {
   position: fixed;
   top: 0px;
@@ -337,7 +443,7 @@ body {
   z-index: 900;
 }
 
-/* Buttons */
+
 .top-controls button {
   padding: 6px 10px;
   border-radius: 6px;
@@ -350,7 +456,7 @@ body {
   background: #fff;
 }
 
-/* Reusable button style */
+
 .sidebar-button,
 .top-controls button {
   padding: 6px 10px;
@@ -363,13 +469,13 @@ body {
   margin-top: 16px;
 }
 
-/* Hover effect */
+
 .sidebar-button:hover,
 .top-controls button:hover {
   background: #fff;
 }
 
-/* Hamburger */
+
 .hamburger {
   width: 32px;
   height: 24px;
@@ -386,18 +492,18 @@ body {
   transition: 0.3s;
 }
 
-/* Sidebar (more hidden) */
+
 .sidebar {
   position: fixed;
   top: 0;
-  right: -280px; /* fully off-screen */
+  right: -280px; 
   width: 260px;
   height: 100%;
   background: #fff7f1;
   box-shadow: -4px 0 10px rgba(0,0,0,0.25);
   padding: 20px;
-  overflow-y: auto;           /* <- allow vertical scrolling if content is tall */
-  box-sizing: border-box;     /* <- include padding in width calculation */
+  overflow-y: auto;           
+  box-sizing: border-box;    
   transition: right 0.4s ease;
   z-index: 1200;
 }
@@ -406,7 +512,7 @@ body {
 }
 
 .candle {
-  background-color: var(--candle-body, red); /* Use a single solid color */
+  background-color: var(--candle-body, red); 
   width: 12px;
   height: 35px;
   border-radius: 6px/3px;
@@ -447,6 +553,36 @@ body {
   animation: flicker 1s ease-in-out alternate infinite;
 }
 
+
+@media (max-width: 900px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .body1,
+  .right-wrapper {
+    width: 100%;
+  }
+
+  .c {
+    max-width: 90%;
+  }
+
+   body {
+    background-size:
+      28%,
+      28%;
+
+    background-position:
+      left 15% bottom 50%,
+      right 15% bottom 50%;
+  }
+}
+
+
+
+
+
 @keyframes flicker {
   0% {
     transform: skewX(5deg);
@@ -469,5 +605,4 @@ body {
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
   }
   
-
 }
