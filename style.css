@@ -720,7 +720,7 @@ top: 50%;
 
   /* box first */
   .body1 {
-    width: 95%;
+    width: 100%;
     order: 1;
     padding-top: 0px;
    
@@ -730,7 +730,7 @@ top: 50%;
   .bg-row {
     position: relative;
     transform: none;
-    top: 700px;
+    top: 820px;
     left: auto;
 
     order: 2;
@@ -750,14 +750,14 @@ top: 50%;
 
   /* cake section last */
   .right-wrapper {
-    width: 80%;
+    width: 65%;
     min-height: auto;
     order: 3;
 
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 400px;
+    margin-top: 470px;
   }
 
   /* release cake from absolute prison */
