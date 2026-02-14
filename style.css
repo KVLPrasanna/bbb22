@@ -77,30 +77,12 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: #fff7f1;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   white-space: nowrap;
 
   text-shadow:
     0 2px 6px rgba(0,0,0,0.6),
     0 0 12px rgba(255,182,193,0.8);
-}
-
-
-@media (max-width: 900px) {
-  .bg-row {
-    flex-direction: row;     /* 👈 SIDE BY SIDE */
-    gap: 12px;
-    top: 42%;
-  }
-
-  .bg-row img {
-    width: 64px;
-  }
-
-  .bg-between-text {
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-  }
 }
 
 
@@ -657,4 +639,132 @@ top: 50%;
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
   }
   
+}
+
+/*
+ @media (max-width: 900px) {
+
+  
+  .main-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+ 
+  .body1 {
+    width: 100%;
+    padding-top: 0px;
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .c {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  /* 2️⃣ GIF ROW SECOND 
+  .bg-row {
+    position: relative;   
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 30px 0;
+    order: 2;
+  }
+
+  .bg-row img {
+    width: 140px;
+  }
+
+  /* 3️⃣ CAKE + IMAGE THIRD 
+  .right-wrapper {
+    width: 80%;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    order: 3;
+    margin-bottom: 40px;
+  }
+
+  .cake {
+    position: absolute;
+    top: 80px;
+    left: -10px;
+    margin: 0;
+  }
+    
+
+  #wps1 img {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: 300px;
+    height: auto;
+  }
+
+
+*/
+
+@media (max-width: 768px) {
+
+  /* stack main sections */
+  .main-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* box first */
+  .body1 {
+    width: 95%;
+    order: 1;
+    padding-top: 0px;
+   
+  }
+
+  /* images + text next */
+  .bg-row {
+    position: relative;
+    transform: none;
+    top: 700px;
+    left: auto;
+
+    order: 2;
+    margin: 30px 0;
+
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .bg-row img {
+    width: 127px;
+  }
+
+  .bg-between-text {
+    font-size: 1.4rem;
+  }
+
+  /* cake section last */
+  .right-wrapper {
+    width: 80%;
+    min-height: auto;
+    order: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 400px;
+  }
+
+  /* release cake from absolute prison */
+  .cake {
+    position: relative;
+    top: -70px;
+    left: -123px;
+    margin: 0;
+  }
 }
