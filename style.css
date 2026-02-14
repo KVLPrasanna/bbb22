@@ -720,7 +720,7 @@ top: 50%;
 
   /* box first */
   .body1 {
-    width: 109%;
+    width: 120%;
     order: 3;
     padding-top: 40px;
     padding: 15px;
@@ -744,7 +744,7 @@ top: 50%;
   }
 
   .bg-row img {
-    width: 120px;
+    width: 135px;
   }
 
   .bg-between-text {
@@ -753,7 +753,7 @@ top: 50%;
 
   /* cake section last */
   .right-wrapper {
-    width: 40%;
+    width: 39%;
     min-height: auto;
     order: 1;
      
