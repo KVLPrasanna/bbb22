@@ -723,6 +723,7 @@ top: 50%;
     width: 100%;
     order: 1;
     padding-top: 0px;
+    padding: 15px;
    
   }
 
@@ -738,6 +739,7 @@ top: 50%;
 
     flex-direction: row;
     gap: 14px;
+    padding: 15px;
   }
 
   .bg-row img {
@@ -750,7 +752,7 @@ top: 50%;
 
   /* cake section last */
   .right-wrapper {
-    width: 65%;
+    width: 60%;
     min-height: auto;
     order: 3;
 
@@ -758,6 +760,7 @@ top: 50%;
     justify-content: center;
     align-items: flex-start;
     margin-top: 470px;
+    padding: 15px;
   }
 
   /* release cake from absolute prison */
