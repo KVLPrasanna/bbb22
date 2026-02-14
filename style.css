@@ -720,12 +720,12 @@ top: 50%;
 
   /* box first */
   .body1 {
-    width: 90%;
+    width: 120%;
     order: 3;
     padding-top: 40px;
-    padding: 15px;
+     padding: 7px;
     margin-top: 300px;
-    margin-left: 100px;
+    margin-left: 70px;
    
   }
 
@@ -742,7 +742,7 @@ top: 50%;
     flex-direction: row;
     gap: 14px;
     padding: 25px;
-    margin-left: 90px;
+    margin-left: 65px;
   }
 
   .bg-row img {
