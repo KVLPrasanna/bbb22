@@ -1,22 +1,7 @@
 body {
   background-color: rgb(44, 87, 110);
 
- /* background-image: 
-    url(kiss1.webp),
-    url(love2.webp);
 
-  background-repeat: 
-    no-repeat,
-    no-repeat;
-
-  background-size: 
-    13%,
-    17%;
-
-  background-position: 
-    center 80%,
-    center 20%;
-    */
 }
 
 
@@ -30,25 +15,7 @@ body {
   display: flex;
   min-height: 100vh;
 }
-/*
 
-.bg-between-text {
-  position: fixed;
-  bottom: 35%;
-  left: 50%;
-  transform: translateX(-50%);
-
-  font-size: 2.2rem;
-  font-weight: bold;
-  color: #fff7f1;
-  letter-spacing: 2px;
-
-  text-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.6),
-    0 0 12px rgba(255, 182, 193, 0.8);
-
-  pointer-events: none;
-  z-index: 5;
 }
 */
 
@@ -725,7 +692,7 @@ top: 50%;
     padding-top: 40px;
      padding: 7px;
     margin-top: 300px;
-    margin-left: 70px;
+    margin-left: 140px;
    
   }
 
@@ -774,3 +741,4 @@ top: 50%;
     margin: 0;
   }
 }
+
